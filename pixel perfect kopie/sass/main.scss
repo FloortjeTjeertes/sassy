@@ -1,0 +1,126 @@
+/* <style>
+@import url('https://fonts.google.com/specimen/Quicksand?selection.family=Quicksand');
+</style> */
+$padding1:0;
+$colors: (
+  pic:#0000FF;
+  knoppenkleur: l#0073CF;
+  blauw1:#00bFE6;
+color2:lcolors(color2);
+
+)
+
+
+
+body{display: grid;
+  margin-left:0; 
+/* grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows:1fr 1fr 1fr 1fr 1fr; */
+
+ grid-template-areas: 'topbar topbar topbar topbar topbar topbar'
+                      'plaatje plaatje  plaatje  plaatje  plaatje  plaatje'
+                      'witbalk1 witbalk1 witbalk1 witbalk1 witbalk1 witbalk1'
+                      'blouw blouw blouw blouw blouw blouw'
+                      'witbalk2 witbalk2 witbalk2 witbalk2 witbalk2 witbalk2'
+                      'blouw2 blouw2 blouw2 blouw2 blouw2 blouw2'
+ ;
+height: 100%;
+width:1400px;
+padding:$padding;
+}
+@mixin bovenkant(){
+#vergroot_glas{
+  padding-right: 0;
+}
+#topbar{
+   grid-area: topbar;
+height:91px;
+display:grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+text-align: right;
+}
+
+
+#knoppen{
+  text-decoration-color: colors:(knoppenkleur);
+padding-left: 800px;
+text-align: center;
+width: 300px;
+}
+}
+#plaatje{
+  grid-area:plaatje;
+  background-image: url(plaatjes/slide-iddink1.jpg);
+  height:295px;
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+#witbalk1{
+   grid-area: witbalk1;
+   height:788px;
+}
+#blouw{
+   grid-area: blouw;
+   background-color: #00bFE6;
+    margin:0;
+    height:400px;
+}
+#witbalk2{
+   grid-area: witbalk2;
+   height:233px;
+}
+#blouw2{
+  grid-area: blouw2;
+  background-color:colors:(knoppenkleur);
+   margin:0;
+   height: 197px;
+}
+#pic{
+background-color:colors(pic);
+height: 300px;
+width:300px
+}
+#deRest{
+
+}
+#plaatje{ img{
+  margin-left: 991px;
+  margin-top: 117px;
+}
+}
+#text1{
+  margin-left: 221px;
+margin-right: 0;
+  color: colors(color2);
+  width:380px;
+  height:72px;
+font-size: 17px;
+text-align: left;
+
+}
+@mixin leesmeer(){
+#leesmeer{
+  background-color: colors:(knoppenkleur);
+color: colors(color2);
+border-radius: 10px;
+height:49px;
+width:139px;
+font-size: 20px;
+text-align:center;
+border-color: colors(color2);
+border-style: solid;
+border-width: 2px;
+margin-left:457px;
+ a{
+  padding-top: 100px;
+}
+}
+}
+#centreer {#wat{
+font-size: 29px;
+text-align: center;
+color: colors:(knoppenkleur);
+}
+  text-align: center;
+}
